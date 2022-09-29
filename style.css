@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(180deg, #121212 0, rgba(0,45,205,.4) 25%, rgba(95,207,209,.2) 50%, rgba(80,60,240,.4) 75%, #121212);
+    background-color: #121212;
+    background-size: 300% 300%;
+    animation: BgMove 20s ease infinite;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+@keyframes BgMove {
+    0% {
+        background-position: 100% 0;
+    }
+    50% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
